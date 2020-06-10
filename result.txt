@@ -1,0 +1,5531 @@
+****************configuration********************
+ary size:4
+cube dimension:4
+virtual channel number:2
+buffer size:12
+outbuffer size:12
+flit size:1
+link length:1000
+simulation length:1.1e+06
+trace file:../sniper_copy/record/traces/bench
+Routing algorithm:2
+****************configuration********************
+Current time: 1 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 2001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 4001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 6001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 8001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 10001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 12001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 14001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 16001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 18001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 20001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 22001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 24001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 26001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 28001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 30001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 32001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 34001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 36001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 38001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 40001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 42001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 44001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 46001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 48001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 50001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 52001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 54001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 56001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 58001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 60001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 62001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 64001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 66001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 68001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 70001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 72001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 74001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 76001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 78001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 80001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 82001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 84001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 86001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 88001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 90001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 92001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 94001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 96001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 98001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 100001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 102001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 104001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 106001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 108001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 110001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 112001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 114001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 116001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 118001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 120001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 122001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 124001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 126001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 128001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 130001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 132001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 134001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 136001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 138001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 140001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 142001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 144001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 146001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 148001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 150001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 152001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 154001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 156001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 158001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 160001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 162001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 164001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 166001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 168001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 170001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 172001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 174001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 176001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 178001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 180001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 182001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 184001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 186001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 188001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 190001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 192001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 194001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 196001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 198001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 200001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 202001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 204001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 206001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 208001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 210001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 212001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 214001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 216001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 218001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 220001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 222001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 224001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 226001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 228001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 230001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 232001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 234001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 236001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 238001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 240001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 242001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 244001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 246001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 248001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 250001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 252001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 254001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 256001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 258001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 260001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 262001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 264001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 266001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 268001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 270001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 272001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 274001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 276001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 278001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 280001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 282001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 284001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 286001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 288001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 290001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 292001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 294001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 296001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 298001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 300001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 302001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 304001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 306001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 308001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 310001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 312001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 314001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 316001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 318001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 320001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 322001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 324001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 326001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 328001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 330001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 332001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 334001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 336001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 338001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 340001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 342001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 344001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 346001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 348001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 350001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 352001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 354001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 356001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 358001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 360001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 362001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 364001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 366001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 368001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 370001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 372001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 374001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 376001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 378001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 380001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 382001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 384001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 386001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 388001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 390001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 392001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 394001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 396001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 398001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 400001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 402001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 404001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 406001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 408001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 410001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 412001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 414001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 416001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 418001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 420001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 422001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 424001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 426001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 428001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 430001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 432001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 434001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 436001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 438001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 440001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 442001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 444001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 446001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 448001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 450001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 452001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 454001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 456001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 458001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 460001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 462001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 464001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 466001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 468001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 470001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 472001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 474001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 476001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 478001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 480001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 482001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 484001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 486001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 488001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 490001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 492001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 494001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 496001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 498001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 500001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 502001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 504001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 506001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 508001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 510001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 512001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 514001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 516001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 518001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 520001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 522001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 524001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 526001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 528001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 530001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 532001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 534001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 536001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 538001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 540001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 542001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 544001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 546001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 548001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 550001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 552001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 554001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 556001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 558001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 560001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 562001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 564001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 566001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 568001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 570001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 572001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 574001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 576001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 578001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 580001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 582001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 584001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 586001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 588001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 590001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 592001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 594001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 596001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 598001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 600001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 602001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 604001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 606001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 608001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 610001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 612001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 614001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 616001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 618001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 620001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 622001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 624001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 626001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 628001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 630001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 632001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 634001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 636001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 638001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 640001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 642001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 644001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 646001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 648001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 650001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 652001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 654001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 656001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 658001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 660001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 662001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 664001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 666001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 668001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 670001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 672001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 674001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 676001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 678001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 680001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 682001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 684001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 686001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 688001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 690001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 692001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 694001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 696001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 698001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 700001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 702001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 704001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 706001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 708001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 710001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 712001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 714001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 716001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 718001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 720001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 722001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 724001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 726001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 728001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 730001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 732001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 734001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 736001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 738001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 740001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 742001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 744001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 746001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 748001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 750001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 752001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 754001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 756001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 758001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 760001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 762001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 764001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 766001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 768001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 770001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 772001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 774001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 776001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 778001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 780001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 782001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 784001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 786001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 788001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 790001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 792001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 794001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 796001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 798001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 800001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 802001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 804001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 806001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 808001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 810001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 812001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 814001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 816001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 818001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 820001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 822001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 824001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 826001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 828001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 830001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 832001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 834001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 836001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 838001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 840001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 842001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 844001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 846001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 848001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 850001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 852001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 854001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 856001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 858001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 860001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 862001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 864001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 866001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 868001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 870001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 872001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 874001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 876001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 878001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 880001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 882001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 884001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 886001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 888001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 890001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 892001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 894001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 896001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 898001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 900001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 902001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 904001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 906001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 908001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 910001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 912001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 914001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 916001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 918001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 920001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 922001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 924001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 926001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 928001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 930001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 932001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 934001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 936001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 938001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 940001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 942001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 944001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 946001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 948001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 950001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 952001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 954001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 956001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 958001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 960001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 962001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 964001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 966001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 968001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 970001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 972001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 974001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 976001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 978001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 980001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 982001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 984001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 986001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 988001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 990001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 992001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 994001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 996001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 998001 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 1e+06 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 1.002e+06 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 1.004e+06 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 1.006e+06 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 1.008e+06 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 1.01e+06 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 1.012e+06 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 1.014e+06 Incoming packets0 Finished packets0
+**************************************************
+total finished:       0
+average Delay:        -nan
+total mem power:      0
+total crossbar power: 0
+total arbiter power:  0
+total link power:     0
+total power:          0
+**************************************************
+Current time: 1.016e+06 Incoming packets24 Finished packets24
+**************************************************
+total finished:       24
+average Delay:        11.75
+total mem power:      2.31202e-05
+total crossbar power: 1.62998e-06
+total arbiter power:  5.8528e-08
+total link power:     2.50867e-06
+total power:          2.73174e-05
+**************************************************
+Current time: 1.018e+06 Incoming packets56 Finished packets56
+**************************************************
+total finished:       56
+average Delay:        11.6071
+total mem power:      5.5971e-05
+total crossbar power: 3.70542e-06
+total arbiter power:  1.33262e-07
+total link power:     5.7309e-06
+total power:          6.55406e-05
+**************************************************
+Current time: 1.02e+06 Incoming packets56 Finished packets56
+**************************************************
+total finished:       56
+average Delay:        11.6071
+total mem power:      5.58613e-05
+total crossbar power: 3.69815e-06
+total arbiter power:  1.33001e-07
+total link power:     5.71967e-06
+total power:          6.54121e-05
+**************************************************
+Current time: 1.022e+06 Incoming packets56 Finished packets56
+**************************************************
+total finished:       56
+average Delay:        11.6071
+total mem power:      5.5752e-05
+total crossbar power: 3.69091e-06
+total arbiter power:  1.32741e-07
+total link power:     5.70847e-06
+total power:          6.52841e-05
+**************************************************
+Current time: 1.024e+06 Incoming packets56 Finished packets56
+**************************************************
+total finished:       56
+average Delay:        11.6071
+total mem power:      5.56431e-05
+total crossbar power: 3.6837e-06
+total arbiter power:  1.32481e-07
+total link power:     5.69733e-06
+total power:          6.51566e-05
+**************************************************
+Current time: 1.026e+06 Incoming packets56 Finished packets56
+**************************************************
+total finished:       56
+average Delay:        11.6071
+total mem power:      5.55346e-05
+total crossbar power: 3.67652e-06
+total arbiter power:  1.32223e-07
+total link power:     5.68622e-06
+total power:          6.50296e-05
+**************************************************
+Current time: 1.028e+06 Incoming packets56 Finished packets56
+**************************************************
+total finished:       56
+average Delay:        11.6071
+total mem power:      5.54266e-05
+total crossbar power: 3.66937e-06
+total arbiter power:  1.31966e-07
+total link power:     5.67516e-06
+total power:          6.49031e-05
+**************************************************
+Current time: 1.03e+06 Incoming packets56 Finished packets56
+**************************************************
+total finished:       56
+average Delay:        11.6071
+total mem power:      5.53189e-05
+total crossbar power: 3.66225e-06
+total arbiter power:  1.3171e-07
+total link power:     5.66414e-06
+total power:          6.4777e-05
+**************************************************
+Current time: 1.032e+06 Incoming packets56 Finished packets56
+**************************************************
+total finished:       56
+average Delay:        11.6071
+total mem power:      5.52117e-05
+total crossbar power: 3.65515e-06
+total arbiter power:  1.31454e-07
+total link power:     5.65316e-06
+total power:          6.46515e-05
+**************************************************
+Current time: 1.034e+06 Incoming packets56 Finished packets56
+**************************************************
+total finished:       56
+average Delay:        11.6071
+total mem power:      5.51049e-05
+total crossbar power: 3.64808e-06
+total arbiter power:  1.312e-07
+total link power:     5.64223e-06
+total power:          6.45264e-05
+**************************************************
+Current time: 1.036e+06 Incoming packets56 Finished packets56
+**************************************************
+total finished:       56
+average Delay:        11.6071
+total mem power:      5.49986e-05
+total crossbar power: 3.64104e-06
+total arbiter power:  1.30947e-07
+total link power:     5.63133e-06
+total power:          6.44019e-05
+**************************************************
+Current time: 1.038e+06 Incoming packets56 Finished packets56
+**************************************************
+total finished:       56
+average Delay:        11.6071
+total mem power:      5.48926e-05
+total crossbar power: 3.63402e-06
+total arbiter power:  1.30695e-07
+total link power:     5.62048e-06
+total power:          6.42778e-05
+**************************************************
+Current time: 1.04e+06 Incoming packets56 Finished packets56
+**************************************************
+total finished:       56
+average Delay:        11.6071
+total mem power:      5.4787e-05
+total crossbar power: 3.62703e-06
+total arbiter power:  1.30443e-07
+total link power:     5.60967e-06
+total power:          6.41542e-05
+**************************************************
+Current time: 1.042e+06 Incoming packets56 Finished packets56
+**************************************************
+total finished:       56
+average Delay:        11.6071
+total mem power:      5.46819e-05
+total crossbar power: 3.62007e-06
+total arbiter power:  1.30193e-07
+total link power:     5.59891e-06
+total power:          6.4031e-05
+**************************************************
+Current time: 1.044e+06 Incoming packets56 Finished packets56
+**************************************************
+total finished:       56
+average Delay:        11.6071
+total mem power:      5.45771e-05
+total crossbar power: 3.61314e-06
+total arbiter power:  1.29943e-07
+total link power:     5.58818e-06
+total power:          6.39084e-05
+**************************************************
+Current time: 1.046e+06 Incoming packets56 Finished packets56
+**************************************************
+total finished:       56
+average Delay:        11.6071
+total mem power:      5.44728e-05
+total crossbar power: 3.60623e-06
+total arbiter power:  1.29695e-07
+total link power:     5.5775e-06
+total power:          6.37862e-05
+**************************************************
+Current time: 1.048e+06 Incoming packets56 Finished packets56
+**************************************************
+total finished:       56
+average Delay:        11.6071
+total mem power:      5.43688e-05
+total crossbar power: 3.59935e-06
+total arbiter power:  1.29447e-07
+total link power:     5.56685e-06
+total power:          6.36645e-05
+**************************************************
+Current time: 1.05e+06 Incoming packets56 Finished packets56
+**************************************************
+total finished:       56
+average Delay:        11.6071
+total mem power:      5.42652e-05
+total crossbar power: 3.59249e-06
+total arbiter power:  1.29201e-07
+total link power:     5.55625e-06
+total power:          6.35432e-05
+**************************************************
+Current time: 1.052e+06 Incoming packets56 Finished packets56
+**************************************************
+total finished:       56
+average Delay:        11.6071
+total mem power:      5.41621e-05
+total crossbar power: 3.58566e-06
+total arbiter power:  1.28955e-07
+total link power:     5.54569e-06
+total power:          6.34224e-05
+**************************************************
+Current time: 1.054e+06 Incoming packets56 Finished packets56
+**************************************************
+total finished:       56
+average Delay:        11.6071
+total mem power:      5.40593e-05
+total crossbar power: 3.57886e-06
+total arbiter power:  1.28711e-07
+total link power:     5.53516e-06
+total power:          6.3302e-05
+**************************************************
+Current time: 1.056e+06 Incoming packets56 Finished packets56
+**************************************************
+total finished:       56
+average Delay:        11.6071
+total mem power:      5.39569e-05
+total crossbar power: 3.57208e-06
+total arbiter power:  1.28467e-07
+total link power:     5.52468e-06
+total power:          6.31821e-05
+**************************************************
+Current time: 1.058e+06 Incoming packets56 Finished packets56
+**************************************************
+total finished:       56
+average Delay:        11.6071
+total mem power:      5.38549e-05
+total crossbar power: 3.56532e-06
+total arbiter power:  1.28224e-07
+total link power:     5.51424e-06
+total power:          6.30627e-05
+**************************************************
+Current time: 1.06e+06 Incoming packets56 Finished packets56
+**************************************************
+total finished:       56
+average Delay:        11.6071
+total mem power:      5.37533e-05
+total crossbar power: 3.5586e-06
+total arbiter power:  1.27982e-07
+total link power:     5.50383e-06
+total power:          6.29437e-05
+**************************************************
+Current time: 1.062e+06 Incoming packets56 Finished packets56
+**************************************************
+total finished:       56
+average Delay:        11.6071
+total mem power:      5.36521e-05
+total crossbar power: 3.5519e-06
+total arbiter power:  1.27741e-07
+total link power:     5.49347e-06
+total power:          6.28252e-05
+**************************************************
+Current time: 1.064e+06 Incoming packets56 Finished packets56
+**************************************************
+total finished:       56
+average Delay:        11.6071
+total mem power:      5.35512e-05
+total crossbar power: 3.54522e-06
+total arbiter power:  1.27501e-07
+total link power:     5.48314e-06
+total power:          6.27071e-05
+**************************************************
+Current time: 1.066e+06 Incoming packets56 Finished packets56
+**************************************************
+total finished:       56
+average Delay:        11.6071
+total mem power:      5.34508e-05
+total crossbar power: 3.53857e-06
+total arbiter power:  1.27262e-07
+total link power:     5.47285e-06
+total power:          6.25894e-05
+**************************************************
+Current time: 1.068e+06 Incoming packets56 Finished packets56
+**************************************************
+total finished:       56
+average Delay:        11.6071
+total mem power:      5.33507e-05
+total crossbar power: 3.53194e-06
+total arbiter power:  1.27023e-07
+total link power:     5.4626e-06
+total power:          6.24722e-05
+**************************************************
+Current time: 1.07e+06 Incoming packets56 Finished packets56
+**************************************************
+total finished:       56
+average Delay:        11.6071
+total mem power:      5.32509e-05
+total crossbar power: 3.52534e-06
+total arbiter power:  1.26786e-07
+total link power:     5.45239e-06
+total power:          6.23555e-05
+**************************************************
+Current time: 1.072e+06 Incoming packets56 Finished packets56
+**************************************************
+total finished:       56
+average Delay:        11.6071
+total mem power:      5.31516e-05
+total crossbar power: 3.51876e-06
+total arbiter power:  1.26549e-07
+total link power:     5.44222e-06
+total power:          6.22391e-05
+**************************************************
+Current time: 1.074e+06 Incoming packets56 Finished packets56
+**************************************************
+total finished:       56
+average Delay:        11.6071
+total mem power:      5.30526e-05
+total crossbar power: 3.51221e-06
+total arbiter power:  1.26314e-07
+total link power:     5.43209e-06
+total power:          6.21232e-05
+**************************************************
+Current time: 1.076e+06 Incoming packets56 Finished packets56
+**************************************************
+total finished:       56
+average Delay:        11.6071
+total mem power:      5.2954e-05
+total crossbar power: 3.50568e-06
+total arbiter power:  1.26079e-07
+total link power:     5.42199e-06
+total power:          6.20078e-05
+**************************************************
+Current time: 1.078e+06 Incoming packets56 Finished packets56
+**************************************************
+total finished:       56
+average Delay:        11.6071
+total mem power:      5.28558e-05
+total crossbar power: 3.49918e-06
+total arbiter power:  1.25845e-07
+total link power:     5.41193e-06
+total power:          6.18927e-05
+**************************************************
+Current time: 1.08e+06 Incoming packets56 Finished packets56
+**************************************************
+total finished:       56
+average Delay:        11.6071
+total mem power:      5.27579e-05
+total crossbar power: 3.4927e-06
+total arbiter power:  1.25612e-07
+total link power:     5.40191e-06
+total power:          6.17781e-05
+**************************************************
+Current time: 1.082e+06 Incoming packets56 Finished packets56
+**************************************************
+total finished:       56
+average Delay:        11.6071
+total mem power:      5.26604e-05
+total crossbar power: 3.48624e-06
+total arbiter power:  1.2538e-07
+total link power:     5.39192e-06
+total power:          6.16639e-05
+**************************************************
+Current time: 1.084e+06 Incoming packets56 Finished packets56
+**************************************************
+total finished:       56
+average Delay:        11.6071
+total mem power:      5.25632e-05
+total crossbar power: 3.47981e-06
+total arbiter power:  1.25148e-07
+total link power:     5.38198e-06
+total power:          6.15501e-05
+**************************************************
+Current time: 1.086e+06 Incoming packets56 Finished packets56
+**************************************************
+total finished:       56
+average Delay:        11.6071
+total mem power:      5.24664e-05
+total crossbar power: 3.4734e-06
+total arbiter power:  1.24918e-07
+total link power:     5.37206e-06
+total power:          6.14368e-05
+**************************************************
+Current time: 1.088e+06 Incoming packets56 Finished packets56
+**************************************************
+total finished:       56
+average Delay:        11.6071
+total mem power:      5.237e-05
+total crossbar power: 3.46702e-06
+total arbiter power:  1.24688e-07
+total link power:     5.36219e-06
+total power:          6.13239e-05
+**************************************************
+Current time: 1.09e+06 Incoming packets56 Finished packets56
+**************************************************
+total finished:       56
+average Delay:        11.6071
+total mem power:      5.22739e-05
+total crossbar power: 3.46065e-06
+total arbiter power:  1.2446e-07
+total link power:     5.35235e-06
+total power:          6.12113e-05
+**************************************************
+Current time: 1.092e+06 Incoming packets56 Finished packets56
+**************************************************
+total finished:       56
+average Delay:        11.6071
+total mem power:      5.21781e-05
+total crossbar power: 3.45432e-06
+total arbiter power:  1.24232e-07
+total link power:     5.34255e-06
+total power:          6.10992e-05
+**************************************************
+Current time: 1.094e+06 Incoming packets56 Finished packets56
+**************************************************
+total finished:       56
+average Delay:        11.6071
+total mem power:      5.20827e-05
+total crossbar power: 3.448e-06
+total arbiter power:  1.24004e-07
+total link power:     5.33278e-06
+total power:          6.09875e-05
+**************************************************
+Current time: 1.096e+06 Incoming packets56 Finished packets56
+**************************************************
+total finished:       56
+average Delay:        11.6071
+total mem power:      5.19877e-05
+total crossbar power: 3.44171e-06
+total arbiter power:  1.23778e-07
+total link power:     5.32305e-06
+total power:          6.08762e-05
+**************************************************
+Current time: 1.098e+06 Incoming packets56 Finished packets56
+**************************************************
+total finished:       56
+average Delay:        11.6071
+total mem power:      5.1893e-05
+total crossbar power: 3.43544e-06
+total arbiter power:  1.23553e-07
+total link power:     5.31335e-06
+total power:          6.07653e-05
+**************************************************
+Current time: 1.1e+06 Incoming packets56 Finished packets56
+**************************************************
+total finished:       56
+average Delay:        11.6071
+total mem power:      5.17986e-05
+total crossbar power: 3.42919e-06
+total arbiter power:  1.23328e-07
+total link power:     5.30369e-06
+total power:          6.06549e-05
+**************************************************
+**************************************************
+total finished:       56
+average Delay:        11.6071
+total mem power:      5.17986e-05
+total crossbar power: 3.42919e-06
+total arbiter power:  1.23328e-07
+total link power:     5.30369e-06
+total power:          6.06549e-05
+**************************************************
