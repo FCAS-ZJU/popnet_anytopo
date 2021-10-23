@@ -265,10 +265,23 @@ class sim_router_template {
 		//input trace file
 		ifstream * localinFile_;//本地轨迹文件流，本路由器的轨迹文件流
 		time_type getWireDelay(long port);
+		
 		void getNextAddress(add_type&nextAddress,long port);
+		void getNextAddress_chipletMesh(add_type&nextAdd,long port);
+		void getNextAddress_chipletStar(add_type &nextAddress, long port);
+		void getNextAddress_mesh(add_type&nextAdd,long port);
+
 		long getWirePc(long port);
+		long getWirePc_mesh(long port);
+		long getWirePc_chipletStar(long port);
+
 		void getFromRouter(add_type&from,long port);
+		void getFromRouter_mesh(add_type&from,long port);
+		void getFromRouter_chipletStar(add_type&from,long port);
+		
 		long getFromPort(long port);
+		long getFromPort_mesh(long port);
+		long getFromPort_chipletStar(long port);
 	public:
 		vector<long> & address() {return address_;}
 		const vector<long> & address() const {return address_;}

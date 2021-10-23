@@ -13,7 +13,7 @@ enum mess_type {EVG_, ROUTER_, WIRE_, CREDIT_};
 enum routing_type {
     XY_ ,
     TXY_ ,
-    CHIPLET_ROUTING,
+    CHIPLET_ROUTING_MESH,
     CHIPLET_STAR_TOPO_ROUTING
 };
 enum VC_state_type {INIT_, ROUTING_, VC_AB_, SW_AB_, SW_TR_, HOME_};
