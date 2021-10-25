@@ -258,6 +258,12 @@ class sim_router_template {
 		//the routing procedure
 		void (sim_router_template::* curr_algorithm)(const add_type &,
 			   const add_type &, long, long);
+		void (sim_router_template::*curr_prevRouterFunc)(add_type&,long);
+		long (sim_router_template::*curr_prevPortFunc)(long);
+		time_type (sim_router_template::*curr_wireDelayFunc)(long);
+		void (sim_router_template::*curr_nextAddFunc)(add_type&,long);
+		long (sim_router_template::*curr_wirePcFunc)(long);
+
 		//used for the next packet injection time
 		time_type local_input_time_;
 		//packet counter
@@ -265,6 +271,9 @@ class sim_router_template {
 		//input trace file
 		ifstream * localinFile_;//本地轨迹文件流，本路由器的轨迹文件流
 		time_type getWireDelay(long port);
+		time_type getWireDelay_mesh(long port);
+		time_type getWireDelay_chipletMesh(long port);
+		time_type getWireDelay_chipletStar(long port);
 		
 		void getNextAddress(add_type&nextAddress,long port);
 		void getNextAddress_chipletMesh(add_type&nextAdd,long port);

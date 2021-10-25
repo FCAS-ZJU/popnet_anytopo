@@ -87,22 +87,42 @@ sim_router_template::sim_router_template(long a, long b, long c,
 
 	case XY_:
 		curr_algorithm = &sim_router_template::XY_algorithm;
+		curr_prevRouterFunc= &sim_router_template::getFromRouter_mesh;
+		curr_prevPortFunc= &sim_router_template::getFromPort_mesh;
+		curr_wireDelayFunc= &sim_router_template::getWireDelay_mesh;
+		curr_nextAddFunc= &sim_router_template::getNextAddress_mesh;
+		curr_wirePcFunc= &sim_router_template::getWirePc_mesh;
 		break;
 
 	case TXY_:
 		curr_algorithm = &sim_router_template::TXY_algorithm;
+		curr_prevRouterFunc= &sim_router_template::getFromRouter_mesh;
+		curr_prevPortFunc= &sim_router_template::getFromPort_mesh;
+		curr_wireDelayFunc= &sim_router_template::getWireDelay_mesh;
+		curr_nextAddFunc= &sim_router_template::getNextAddress_mesh;
+		curr_wirePcFunc= &sim_router_template::getWirePc_mesh;
 		break;
 
 	//changed at 2020-5-6
 	//添加了芯粒的路由算法
 	case CHIPLET_ROUTING_MESH:
 		curr_algorithm = &sim_router_template::chiplet_routing_alg;
+		curr_prevRouterFunc= &sim_router_template::getFromRouter_mesh;
+		curr_prevPortFunc= &sim_router_template::getFromPort_mesh;
+		curr_wireDelayFunc= &sim_router_template::getWireDelay_chipletMesh;
+		curr_nextAddFunc= &sim_router_template::getNextAddress_chipletMesh;
+		curr_wirePcFunc= &sim_router_template::getWirePc_mesh;
 		break;
 
 	//changed at 2020-5-19
 	//增加了星型拓扑的芯粒路由算法
 	case CHIPLET_STAR_TOPO_ROUTING:
 		curr_algorithm = &sim_router_template::chiplet_star_topo_routing_alg;
+		curr_prevRouterFunc= &sim_router_template::getFromRouter_chipletStar;
+		curr_prevPortFunc= &sim_router_template::getFromPort_chipletStar;
+		curr_wireDelayFunc= &sim_router_template::getWireDelay_chipletStar;
+		curr_nextAddFunc= &sim_router_template::getNextAddress_chipletStar;
+		curr_wirePcFunc= &sim_router_template::getWirePc_chipletStar;
 		break;
 
 	default:
@@ -648,7 +668,7 @@ bool isCentral(const add_type&address,long centerXY)
 //获得微片的上一个路由器的地址
 void sim_router_template::getFromRouter(add_type&from,long port)
 {
-	switch(routing_alg_){
+	/* switch(routing_alg_){
 		case XY_:
 		case TXY_:
 		case CHIPLET_ROUTING_MESH:
@@ -659,7 +679,8 @@ void sim_router_template::getFromRouter(add_type&from,long port)
 			break;
 		default:
 			throw "Error: Wrong type of routing algorithm";
-	}
+	} */
+	(this->*curr_prevRouterFunc)(from,port);
 }
 void sim_router_template::getFromRouter_mesh(add_type&from,long port)
 {
@@ -693,7 +714,7 @@ void sim_router_template::getFromRouter_chipletStar(add_type&from,long port)
 //获得该微片是从上一个路由器哪一个输出端口出来的
 long sim_router_template::getFromPort(long port)
 {
-	switch(routing_alg_){
+	/* switch(routing_alg_){
 		case XY_:
 		case TXY_:
 		case CHIPLET_ROUTING_MESH:
@@ -702,7 +723,8 @@ long sim_router_template::getFromPort(long port)
 			return getFromPort_chipletStar(port);
 		default:
 			throw "Error: Wrong type of routing algorithm";
-	}
+	} */
+	(this->*curr_prevPortFunc)(port);
 }
 long sim_router_template::getFromPort_mesh(long port)
 {
@@ -824,30 +846,37 @@ void sim_router_template::flit_outbuffer()
 	}
 }
 
-//计算下一跳的延迟
-time_type sim_router_template::getWireDelay(long port)
+/* const time_type SHORT_WIRE_DELAY = WIRE_DELAY_;
+const time_type LONG_WIRE_DELAY_X = WIRE_DELAY_;
+const time_type LONG_WIRE_DELAY_Y = WIRE_DELAY_; */
+const time_type FREQUENCY = 1;
+const time_type SHORT_WIRE_DELAY=9.57*FREQUENCY;
+const time_type LONG_WIRE_DELAY_X=153.16*FREQUENCY;
+const time_type LONG_WIRE_DELAY_Y=153.16*FREQUENCY;
+const time_type STAR_TOPO_2_2 = 76.5769 * FREQUENCY;
+const time_type STAR_TOPO_4_2_INNER=47.8721*FREQUENCY;
+const time_type STAR_TOPO_4_2_OUTER=124.4789*FREQUENCY;
+const time_type STAR_TOPO_4_4_INNER=19.1442*FREQUENCY;
+const time_type STAR_TOPO_4_4_OUTER=95.7453*FREQUENCY;
+const time_type STAR_TOPO_4_4_CORNER=172.2980*FREQUENCY;
+time_type sim_router_template::getWireDelay_mesh(long port)
 {
-	/* const time_type SHORT_WIRE_DELAY = WIRE_DELAY_;
-	const time_type LONG_WIRE_DELAY_X = WIRE_DELAY_;
-	const time_type LONG_WIRE_DELAY_Y = WIRE_DELAY_; */
-	const time_type FREQUENCY = 1;
-	const time_type SHORT_WIRE_DELAY=9.57*FREQUENCY;
-	const time_type LONG_WIRE_DELAY_X=153.16*FREQUENCY;
-	const time_type LONG_WIRE_DELAY_Y=153.16*FREQUENCY;
-	const time_type STAR_TOPO_2_2 = 76.5769 * FREQUENCY;
-	const time_type STAR_TOPO_4_2_INNER=47.8721*FREQUENCY;
-	const time_type STAR_TOPO_4_2_OUTER=124.4789*FREQUENCY;
-	const time_type STAR_TOPO_4_4_INNER=19.1442*FREQUENCY;
-	const time_type STAR_TOPO_4_4_OUTER=95.7453*FREQUENCY;
-	const time_type STAR_TOPO_4_4_CORNER=172.2980*FREQUENCY;
+	return WIRE_DELAY_;
+}
+time_type sim_router_template::getWireDelay_chipletMesh(long port)
+{
+	return (port<=5?(port<3?LONG_WIRE_DELAY_X:LONG_WIRE_DELAY_Y):SHORT_WIRE_DELAY);
+}
+time_type sim_router_template::getWireDelay_chipletStar(long port)
+{
 	time_type r = 0;
-	switch(routing_alg_){
+	/* switch(routing_alg_){
 		case XY_:
 		case TXY_:
 			return WIRE_DELAY_;
 		case CHIPLET_ROUTING_MESH:
 			return (port<=5?(port<3?LONG_WIRE_DELAY_X:LONG_WIRE_DELAY_Y):SHORT_WIRE_DELAY);
-	}
+	} */
 	long centerXY=ary_size_-1;
 	if(isCentral(address_,centerXY)){
 		long chipletX=(port-1)/centerXY;
@@ -890,10 +919,15 @@ time_type sim_router_template::getWireDelay(long port)
 	//return WIRE_DELAY_;
 	return r;
 }
+//计算下一跳的延迟
+time_type sim_router_template::getWireDelay(long port)
+{
+	return (this->*curr_wireDelayFunc)(port);
+}
 //根据输出端口计算下一跳路由器的地址
 void sim_router_template::getNextAddress(add_type &nextAddress, long port)
 {
-	switch(routing_alg_){
+	/* switch(routing_alg_){
 		case XY_:
 		case TXY_:
 			getNextAddress_mesh(nextAddress,port);
@@ -906,7 +940,8 @@ void sim_router_template::getNextAddress(add_type &nextAddress, long port)
 			break;
 		default:
 			throw "Error: Wrong type of routing algorithm";
-	}
+	} */
+	(this->*curr_nextAddFunc)(nextAddress,port);
 }
 void remainderAdd(long&dividend,long divisor)
 {
@@ -969,7 +1004,7 @@ void sim_router_template::getNextAddress_chipletStar(add_type &nextAddress, long
 //根据输出端口计算下一跳路由器的输入端口
 long sim_router_template::getWirePc(long port)
 {
-	switch(routing_alg_){
+	/* switch(routing_alg_){
 		case XY_:
 		case TXY_:
 		case CHIPLET_ROUTING_MESH:
@@ -978,7 +1013,8 @@ long sim_router_template::getWirePc(long port)
 			return getWirePc_chipletStar(port);
 		default:
 			throw "Error: Wrong type of routing algorithm";
-	}
+	} */
+	(this->*curr_wirePcFunc)(port);
 }
 long sim_router_template::getWirePc_mesh(long port)
 {
