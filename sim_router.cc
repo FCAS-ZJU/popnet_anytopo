@@ -661,7 +661,7 @@ void sim_router_template::sw_arbitration()
 	}
 }
 
-bool isCentral(const add_type&address,long centerXY)
+inline bool isCentral(const add_type&address,long centerXY)
 {
 	return address[0]==centerXY&&address[1]==centerXY&&address[2]==0&&address[3]==0;
 }
@@ -943,12 +943,12 @@ void sim_router_template::getNextAddress(add_type &nextAddress, long port)
 	} */
 	(this->*curr_nextAddFunc)(nextAddress,port);
 }
-void remainderAdd(long&dividend,long divisor)
+inline void remainderAdd(long&dividend,long divisor)
 {
 	dividend++;
 	if(dividend==divisor)dividend=0;
 }
-void remainderReduce(long&dividend,long divisor)
+inline void remainderReduce(long&dividend,long divisor)
 {
 	if(dividend==0)dividend=divisor-1;
 	else dividend--;
