@@ -63,9 +63,9 @@ sim_foundation::sim_foundation():
 inline void readAddress(add_type&add,ifstream&ifs,size_t dimension)
 {
 	long t;
-	for(size_t i=0;i<dimension){
+	for(size_t i=0;i<dimension;i++){
 		ifs>>t;
-		Sassert(!inFile_.eof());
+		Sassert(!ifs.eof());
 		add.push_back(t);
 	}
 }
