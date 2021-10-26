@@ -409,6 +409,10 @@ void sim_router_template::receive_packet()
 	add_type des_addr_t;
 	long pack_size_t;
 	long pack_c;
+	//changed at 2021-10-26
+	//预留空间
+	sor_addr_t.reserve(cube_s);
+	des_addr_t.reserve(cube_s);
 	while ((input_module_.ibuff_full() == false) && (local_input_time_ <=
 													 event_time + S_ELPS_))
 	{
