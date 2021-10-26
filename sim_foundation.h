@@ -26,7 +26,10 @@ class sim_foundation {
 		long router_counter_;//路由器总数
 		long packet_counter_;
 
-		ifstream inFile_;
+		//changed at 2021-10-26
+		//将文件流改为队列，以提高速度
+		//ifstream inFile_;
+		std::queue<SPacket>inputTraces;
 
 		static string file_name_;
 		static sim_foundation * s_f_;

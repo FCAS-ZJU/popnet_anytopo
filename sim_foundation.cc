@@ -12,15 +12,15 @@
 //***************************************************************************//
 //***************************************************************************//
 sim_foundation * sim_foundation::s_f_ = 0;
-void init_file(ifstream & inFile_);
+//void init_file(ifstream & inFile_);
 //***************************************************************************//
 sim_foundation::sim_foundation(): 
 	inter_network_(),
 	ary_size_(0),
 	cube_size_(0),
 	router_counter_(0),
-	packet_counter_(0),
-	inFile_()
+	packet_counter_(0)/* ,
+	inFile_() */
 
 {
 	s_f_ = this;
@@ -57,7 +57,6 @@ sim_foundation::sim_foundation():
 		}
 			
 	}
-	readTraceFile();
 	init_file();
 }
 
@@ -72,35 +71,46 @@ inline void readAddress(add_type&add,ifstream&ifs,size_t dimension)
 }
 void readPacket(SPacket&packet,ifstream&ifs,size_t dimension)
 {
-	ifs>>packet.startTime;
-	readAddress(packet.sourceAddress,ifs,dimension);
-	readAddress(packet.destinationAddress,ifs,dimension);
-	ifs>>packet.packetSize;
+	if(ifs>>packet.startTime){
+		readAddress(packet.sourceAddress,ifs,dimension);
+		readAddress(packet.destinationAddress,ifs,dimension);
+		ifs>>packet.packetSize;
+	}
 }
+//一下子把所有轨迹读入内存
 void sim_foundation::readTraceFile()
 {
 	ifstream traceFile(configuration::wap().trace_fname().c_str());
 	SPacket packet;
-	while(!traceFile){
-		readPacket(packet,traceFile,cube_size_);
+	size_t cnt=0;
+	while(traceFile>>packet.startTime){
+		//readPacket(packet,traceFile,cube_size_);
+		readAddress(packet.sourceAddress,traceFile,cube_size_);
+		readAddress(packet.destinationAddress,traceFile,cube_size_);
+		traceFile>>packet.packetSize;
+		inputTraces.push(packet);
 		router(packet.sourceAddress).inputTrace(packet);
 		packet.sourceAddress.clear();
 		packet.destinationAddress.clear();
+		cnt++;
 	}
+	cout<<"Packet count: "<<cnt<<endl;
 }
 
 //***************************************************************************//
+//changed at 2021-10-26
 void sim_foundation::init_file()
 {
-	inFile_.open(configuration::wap().trace_fname().c_str());
+	readTraceFile();
+	/* inFile_.open(configuration::wap().trace_fname().c_str());
     if(!inFile_) {
        cerr<<"Can not open source file."<<endl;
        assert(0);
-    }
-    time_type event_time_t;
-	inFile_ >> event_time_t;
+    } */
+    //time_type event_time_t;
+	//inFile_ >> event_time_t;
 	mess_queue::wm_pointer().add_message(mess_event(
-						event_time_t, EVG_));
+						/* event_time_t */inputTraces.front().startTime, EVG_));
 }
 //***************************************************************************//
 ostream& operator<<(ostream& os, const sim_foundation& sf)
@@ -147,14 +157,14 @@ const sim_router_template & sim_foundation::router(const
 void sim_foundation::receive_EVG_message(mess_event mesg)
 {
 	//first, inject the flits 
-    add_type sor_addr_t;
+    //add_type sor_addr_t;
 	//changed at 2021-10-26
 	//去掉无用的变量
     //add_type des_addr_t;
-    long pack_size_t;
-	sor_addr_t.reserve(cube_size_);
+    //long pack_size_t;
+	//sor_addr_t.reserve(cube_size_);
 	//des_addr_t.reserve(cube_size_);
-    for(long i = 0; i < cube_size_; i++) {
+    /* for(long i = 0; i < cube_size_; i++) {
 		long t; inFile_ >> t;
 		Sassert(!inFile_.eof());
 		sor_addr_t.push_back(t);
@@ -165,20 +175,21 @@ void sim_foundation::receive_EVG_message(mess_event mesg)
 		//des_addr_t.push_back(t);
 	}
 	inFile_ >> pack_size_t;
-	Sassert(!inFile_.eof());
-	router(sor_addr_t).receive_packet();
+	Sassert(!inFile_.eof()); */
+	router(/* sor_addr_t */inputTraces.front().sourceAddress).receive_packet();
 	packet_counter_++;
 
 	//下一个外部数据包的时间
-    if(!inFile_.eof()) {
+    /* if(!inFile_.eof()) {
         time_type event_time_t;
 		inFile_ >> event_time_t;
 		if(!inFile_.eof()) {
 			mess_queue::wm_pointer().add_message(mess_event(
 						event_time_t, EVG_));
 		}
-	}
-
+	} */
+	inputTraces.pop();
+	if(!inputTraces.empty())mess_queue::wm_pointer().add_message(mess_event(inputTraces.front().startTime,EVG_));
 }
 //***************************************************************************//
 //evaluate the address
