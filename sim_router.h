@@ -21,6 +21,9 @@ extern "C" {
 #include "SIM_power_router.h"
 }
 
+//changed at 2021-10-26
+#include<queue>
+
 // *****************************************************//
 // data structure to model the structure and behavior   //
 // of routers.                                          //
@@ -287,7 +290,7 @@ class sim_router_template {
 		//将文件改为队列，以提高速度
 		//input trace file
 		//ifstream * localinFile_;//本地轨迹文件流，本路由器的轨迹文件流
-		std::queue<SPacket> localInputTraces;
+		std::queue<SPacket>localInputTraces;
 
 		time_type getWireDelay(long port);
 		time_type getWireDelay_mesh(long port);
