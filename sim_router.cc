@@ -81,6 +81,7 @@ sim_router_template::sim_router_template(long a, long b, long c,
 	//changed at 2021-10-26
 	/* init_local_file();
 	localinFile() >> local_input_time_; */
+	local_input_time_=localInputTraces.front().startTime;
 
 	routing_alg_ = configuration::ap().routing_alg();
 	switch (routing_alg_)
