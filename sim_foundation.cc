@@ -57,6 +57,7 @@ sim_foundation::sim_foundation():
 		}
 			
 	}
+	readTraceFile();
 	init_file();
 }
 
