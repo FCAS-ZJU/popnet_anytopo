@@ -43,6 +43,7 @@ sim_foundation::sim_foundation():
 	}
 	add_type add_t;
 	add_t.resize(cube_size_, 0);
+	inter_network_.reserve(router_counter_);
 	for(long i = 0; i < router_counter_; i++) {
 		inter_network_.push_back(sim_router_template
 			(phy_ports_t, vc_size, buff_size, outbuff_size, add_t, 
