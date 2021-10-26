@@ -84,6 +84,8 @@ void sim_foundation::readTraceFile()
 	while(!traceFile){
 		readPacket(packet,traceFile,cube_size_);
 		router(packet.sourceAddress).inputTrace(packet);
+		packet.sourceAddress.clear();
+		packet.destinationAddress.clear();
 	}
 }
 
