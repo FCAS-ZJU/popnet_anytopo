@@ -12,6 +12,11 @@ bool operator<(const mess_event & a, const mess_event & b) {
 	return a.event_start() < b.event_start();
 }
 
+bool operator>(const mess_event&a,const mess_event&b)
+{
+	return a.event_start()>b.event_start();
+}
+
 mess_queue * mess_queue::m_pointer_ = 0;
 
 mess_queue::mess_queue(time_type start_time):
@@ -42,7 +47,9 @@ void mess_queue::simulator() {
 	//when mess queue is not empty and simulation deadline has not reach
 	while(m_q_.size() > 0 && (current_time_ <= (configuration
 					::ap().sim_length()))) {
-		mess_event current_message = * get_message();
+		//changed at 2021-10-26
+		//mess_event current_message = * get_message();
+		mess_event current_message=get_message();
 		//changed at 2020-5-23
 		//输出日志
 		logfile<<current_message;
