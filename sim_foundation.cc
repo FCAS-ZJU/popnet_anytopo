@@ -119,8 +119,12 @@ void sim_foundation::receive_EVG_message(mess_event mesg)
 {
 	//first, inject the flits 
     add_type sor_addr_t;
-    add_type des_addr_t;
+	//changed at 2021-10-26
+	//去掉无用的变量
+    //add_type des_addr_t;
     long pack_size_t;
+	sor_addr_t.reserve(cube_size_);
+	//des_addr_t.reserve(cube_size_);
     for(long i = 0; i < cube_size_; i++) {
 		long t; inFile_ >> t;
 		Sassert(!inFile_.eof());
@@ -129,7 +133,7 @@ void sim_foundation::receive_EVG_message(mess_event mesg)
     for(long i = 0; i < cube_size_; i++) {
 		long t; inFile_ >> t;
 		Sassert(!inFile_.eof());
-		des_addr_t.push_back(t);
+		//des_addr_t.push_back(t);
 	}
 	inFile_ >> pack_size_t;
 	Sassert(!inFile_.eof());
