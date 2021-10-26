@@ -60,6 +60,32 @@ sim_foundation::sim_foundation():
 	init_file();
 }
 
+inline void readAddress(add_type&add,ifstream&ifs,size_t dimension)
+{
+	long t;
+	for(size_t i=0;i<dimension){
+		ifs>>t;
+		Sassert(!inFile_.eof());
+		add.push_back(t);
+	}
+}
+void readPacket(SPacket&packet,ifstream&ifs,size_t dimension)
+{
+	ifs>>packet.startTime;
+	readAddress(packet.sourceAddress,ifs,dimension);
+	readAddress(packet.destinationAddress,ifs,dimension);
+	ifs>>packet.packetSize;
+}
+void sim_foundation::readTraceFile()
+{
+	ifstream traceFile(configuration::wap().trace_fname().c_str());
+	SPacket packet;
+	while(!traceFile){
+		readPacket(packet,traceFile,cube_size_);
+		router(packet.sourceAddress).inputTrace(packet);
+	}
+}
+
 //***************************************************************************//
 void sim_foundation::init_file()
 {

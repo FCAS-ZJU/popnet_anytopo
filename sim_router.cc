@@ -44,8 +44,8 @@ sim_router_template::sim_router_template() : address_(),
 											 routing_alg_(),
 											 curr_algorithm(),
 											 local_input_time_(),
-											 packet_counter_(),
-											 localinFile_()
+											 packet_counter_()/* ,
+											 localinFile_() */
 
 {
 }
@@ -69,8 +69,8 @@ sim_router_template::sim_router_template(long a, long b, long c,
 																					  routing_alg_(0),
 																					  curr_algorithm(0),
 																					  local_input_time_(),
-																					  packet_counter_(0),
-																					  localinFile_()
+																					  packet_counter_(0)/* ,
+																					  localinFile_() */
 {
 	init_data_.resize(g);
 	for (long i = 0; i < g; i++)
@@ -78,8 +78,9 @@ sim_router_template::sim_router_template(long a, long b, long c,
 		init_data_[i] = SRGen::wrg().flat_ull(0, MAX_64_);
 	}
 	//get the trace file name
-	init_local_file();
-	localinFile() >> local_input_time_;
+	//changed at 2021-10-26
+	/* init_local_file();
+	localinFile() >> local_input_time_; */
 
 	routing_alg_ = configuration::ap().routing_alg();
 	switch (routing_alg_)
@@ -275,7 +276,7 @@ double power_template::power_link_report()
 }
 
 //***************************************************************************//
-void sim_router_template::init_local_file()
+/* void sim_router_template::init_local_file()
 {
 	string name_t = configuration::wap().trace_fname();
 	for (long i = 0; i < address_.size(); i++)
@@ -291,8 +292,11 @@ void sim_router_template::init_local_file()
 		cerr << "can not open trace file :" << name_t << endl;
 		assert(0);
 	}
+} */
+void sim_router_template::inputTrace(const SPacket&packet)
+{
+	localInputTraces.push(packet);
 }
-
 //***************************************************************************//
 ostream &operator<<(ostream &os, const input_template &Ri)
 {
@@ -405,20 +409,21 @@ void sim_router_template::receive_packet()
 {
 	time_type event_time = mess_queue::m_pointer().current_time();
 	long cube_s = sim_foundation::wsf().cube_size();
-	add_type sor_addr_t;
+	//changed at 2021-10-26
+	/* add_type sor_addr_t;
 	add_type des_addr_t;
 	long pack_size_t;
-	long pack_c;
+	long pack_c; */
 	//changed at 2021-10-26
 	//预留空间
-	sor_addr_t.reserve(cube_s);
-	des_addr_t.reserve(cube_s);
+	/* sor_addr_t.reserve(cube_s);
+	des_addr_t.reserve(cube_s); */
 	while ((input_module_.ibuff_full() == false) && (local_input_time_ <=
 													 event_time + S_ELPS_))
 	{
-		sor_addr_t.clear();
-		des_addr_t.clear();
-		for (long i = 0; i < cube_s; i++)
+		/* sor_addr_t.clear();
+		des_addr_t.clear(); */
+		/* for (long i = 0; i < cube_s; i++)
 		{
 			long t;
 			localinFile() >> t;
@@ -440,19 +445,25 @@ void sim_router_template::receive_packet()
 			des_addr_t.push_back(t);
 		}
 		//read packet size
-		localinFile() >> pack_size_t;
-		inject_packet(packet_counter_, sor_addr_t,
-					  des_addr_t, local_input_time_, pack_size_t);
+		localinFile() >> pack_size_t; */
+		if(localInputTraces.empty())return;
+		SPacket&p=localInputTraces.front();
+		inject_packet(packet_counter_, /* sor_addr_t */p.sourceAddress,
+					  /* des_addr_t */p.destinationAddress, local_input_time_, /* pack_size_t */p.packetSize);
 		packet_counter_++;
 
 		//second, create next EVG_ event
-		if (!localinFile().eof())
+		/* if (!localinFile().eof())
 		{
 			localinFile() >> local_input_time_;
 			if (localinFile().eof())
 			{
 				return;
 			}
+		} */
+		localInputTraces.pop();
+		if(!localInputTraces.empty()){
+			local_input_time_=localInputTraces.front().startTime;
 		}
 	}
 }

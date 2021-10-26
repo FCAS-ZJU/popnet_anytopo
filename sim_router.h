@@ -229,6 +229,21 @@ class power_template {
 	double power_arbiter_report();
 };
 //***************************************************************************//
+//changed at 2021-10-26
+//数据包结构体
+struct SPacket
+{
+	time_type startTime;
+	add_type sourceAddress,destinationAddress;
+	long packetSize;
+
+	SPacket()
+	{
+		size_t addSize=configuration::ap().cube_number();
+		sourceAddress.reserve(addSize);
+		destinationAddress.reserve(addSize);
+	}
+};
 //physical port 0 is injection port
 class sim_router_template {
 	friend ostream& operator<<(ostream& os, const sim_router_template & sr);
@@ -268,8 +283,12 @@ class sim_router_template {
 		time_type local_input_time_;
 		//packet counter
 		long packet_counter_;
+		//changed at 2021-10-26
+		//将文件改为队列，以提高速度
 		//input trace file
-		ifstream * localinFile_;//本地轨迹文件流，本路由器的轨迹文件流
+		//ifstream * localinFile_;//本地轨迹文件流，本路由器的轨迹文件流
+		std::queue<SPacket> localInputTraces;
+
 		time_type getWireDelay(long port);
 		time_type getWireDelay_mesh(long port);
 		time_type getWireDelay_chipletMesh(long port);
@@ -351,14 +370,17 @@ class sim_router_template {
 		void flit_traversal();
 		void flit_traversal(long a);
 
-		ifstream & localinFile() {return * localinFile_;}
-		void init_local_file();
+		/* ifstream & localinFile() {return * localinFile_;}
+		void init_local_file(); */
 
 		//changed at 2020-5-6
 		//新路由算法
 		void chiplet_routing_alg(const add_type & des_t,const add_type & sor_t, long s_ph, long s_vc);
 		//changed at 2020-5-19
 		void chiplet_star_topo_routing_alg(const add_type & des_t,const add_type & src_t, long s_ph, long s_vc);
+
+		//changed at 2021-10-26
+		void inputTrace(const SPacket&packet);
 };
 
 #endif

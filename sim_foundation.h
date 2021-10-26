@@ -31,7 +31,6 @@ class sim_foundation {
 		static string file_name_;
 		static sim_foundation * s_f_;
 
-
 	public:
 		class file_error: public exception {
 			public:
@@ -46,7 +45,7 @@ class sim_foundation {
 		static const sim_foundation & sf() {return *s_f_;}
 		static sim_foundation & wsf() {return *s_f_;}
 		sim_foundation();
-		~sim_foundation(){s_f_ = 0;}
+		~sim_foundation(){s_f_ = nullptr;}
 		long ary_size() const {return ary_size_;}
 		long cube_size() const {return cube_size_;}
 		long packet_counter() {return packet_counter_;}
@@ -71,5 +70,10 @@ class sim_foundation {
 
 		void init_file();
 
+		//changed at 2021-10-26
+		void readTraceFile();
+
 };
+
+void readPacket(SPacket&packet,std::ifstream&ifs,size_t dimension);
 #endif

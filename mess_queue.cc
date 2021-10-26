@@ -17,7 +17,7 @@ bool operator>(const mess_event&a,const mess_event&b)
 	return a.event_start()>b.event_start();
 }
 
-mess_queue * mess_queue::m_pointer_ = 0;
+mess_queue * mess_queue::m_pointer_ = nullptr;
 
 mess_queue::mess_queue(time_type start_time):
     current_time_(0),
