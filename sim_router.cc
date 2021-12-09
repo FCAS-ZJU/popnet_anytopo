@@ -13,6 +13,14 @@
 #include <algorithm>
 #include <functional>
 
+//changed at 2021-12-9
+#define USING_VOLA
+#ifdef USING_VOLA
+#define VOLA volatile
+#else
+#define VOLA
+#endif
+
 // *****************************************************//
 // data structure to model the structure and behavior   //
 // of routers.                                          //
@@ -216,10 +224,21 @@ void power_template::power_buffer_write(long in_port, Data_type &write_d)
 
 	for (i = 0; i < flit_size_; i++)
 	{
-		Atom_type old_d = buffer_write_[in_port][i];
+		//changed at 2021-12-9
+		//此处有越界问题，已暂时修复
+		/* Atom_type old_d = buffer_write_[in_port][i];
 		Atom_type new_d = write_d[i];
 		Atom_type old_d2 = buffer_write_[in_port][i];
-		Atom_type new_d2 = write_d[i];
+		Atom_type new_d2 = write_d[i]; */
+		VOLA Atom_type ata[4]={0};
+		VOLA Atom_type&old_d=ata[0];
+		VOLA Atom_type&new_d=ata[1];
+		VOLA Atom_type&old_d2=ata[2];
+		VOLA Atom_type&new_d2=ata[3];
+		old_d=buffer_write_[in_port][i];
+		new_d=write_d[i];
+		old_d2=buffer_write_[in_port][i];
+		new_d2=new_d2 = write_d[i];
 
 		FUNC(SIM_buf_power_data_write, &(router_info_.in_buf_info),
 			 &(router_power_.in_buf), (char *)(&old_d),
