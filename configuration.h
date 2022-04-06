@@ -31,6 +31,9 @@ class configuration {
 	 	string trace_fname_; //simulation input file name 轨迹文件
 		long routing_alg_; //choose one of the routing algorithms
 		vc_share_type vc_share_; //VC sharing, based on routing algorithms
+		//changed at 2022-4-4
+		string topo_file_path;
+
 		static string help_;
 		static configuration * ap_;
 	public:
@@ -81,6 +84,9 @@ class configuration {
 		long routing_alg() const {return routing_alg_;}
 		vc_share_type vc_share() {return vc_share_;}
 		vc_share_type vc_share() const {return vc_share_;}
+		//changed at 2022-4-4
+		const string&getTopoFilePath()const;
+
 		~configuration() { ap_ = 0;}
 };
 #endif

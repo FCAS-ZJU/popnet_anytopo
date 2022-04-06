@@ -35,8 +35,16 @@ sim_foundation::sim_foundation():
 	long phy_ports_t = cube_size_ * 2 + 1;
 	//changed at 2020-5-20
 	//权宜之计，这样做会增大不必要的内存消耗
-	if(configuration::ap().routing_alg()==CHIPLET_STAR_TOPO_ROUTING)
+	switch(configuration::ap().routing_alg()){
+	case CHIPLET_STAR_TOPO_ROUTING:
 		phy_ports_t=max(phy_ports_t,cube_size_*cube_size_)+1;
+		break;
+	case GRAPH_TOPO:
+		CGraphTopo::init();
+		break;
+	}
+	/* if(configuration::ap().routing_alg()==CHIPLET_STAR_TOPO_ROUTING)
+		phy_ports_t=max(phy_ports_t,cube_size_*cube_size_)+1; */
 	router_counter_ = ary_size_;
 	for(long i = 0; i < cube_size_ - 1; i++) {
 		router_counter_ = router_counter_ * ary_size_;
@@ -45,9 +53,11 @@ sim_foundation::sim_foundation():
 	add_t.resize(cube_size_, 0);
 	inter_network_.reserve(router_counter_);
 	for(long i = 0; i < router_counter_; i++) {
-		inter_network_.push_back(sim_router_template
+		//changed at 2022-4-3
+		/* inter_network_.push_back(sim_router_template
 			(phy_ports_t, vc_size, buff_size, outbuff_size, add_t, 
-			 ary_size_, flit_size)); 
+			 ary_size_, flit_size));  */
+		inter_network_.push_back(CRouter(phy_ports_t,vc_size,buff_size,outbuff_size,add_t,ary_size_,flit_size));
 		//assign the address of the router
 		add_t[cube_size_ - 1]++;
 		for(long j = cube_size_ -1; j > 0; j--) {
@@ -56,7 +66,19 @@ sim_foundation::sim_foundation():
 				add_t[j-1]++;
 			}
 		}
-			
+		//changed at 2022-4-4
+		switch(configuration::ap().routing_alg()){
+		case XY_:
+		case TXY_:
+		case CHIPLET_ROUTING_MESH:
+		case CHIPLET_STAR_TOPO_ROUTING:
+			break;
+		case GRAPH_TOPO:
+			//CGraphTopo::init();
+			break;
+		default:
+			Sassert(false);
+		}
 	}
 	init_file();
 }
@@ -84,6 +106,7 @@ void sim_foundation::readTraceFile()
 	ifstream traceFile(configuration::wap().trace_fname().c_str());
 	SPacket packet;
 	size_t cnt=0;
+	//注入时间，源地址，目的地址，数据包大小
 	while(traceFile>>packet.startTime){
 		//readPacket(packet,traceFile,cube_size_);
 		readAddress(packet.sourceAddress,traceFile,cube_size_);
@@ -117,20 +140,23 @@ void sim_foundation::init_file()
 ostream& operator<<(ostream& os, const sim_foundation& sf)
 {
 	os <<"************Router list*************"<<endl;
-	vector<sim_router_template>::const_iterator first = (sf.inter_network_)
+	//changed at 2022-4-3
+	/* vector<sim_router_template>::const_iterator first = (sf.inter_network_)
 																	.begin();
 	vector<sim_router_template>::const_iterator last = (sf.inter_network_)
 																	  .end();
 	for(; first != last; first++) {
 		os<<(*first);
-	}
+	} */
+	for(auto&router:sf.inter_network_)os<<router;
 	return os;
 }
 
 //***************************************************************************//
 
 //karel: get the sim_router_template by add_type.
-sim_router_template & sim_foundation::router(const add_type & a) 
+//changed at 2022-4-3
+/*sim_router_template*/CRouter & sim_foundation::router(const add_type & a) 
 {
 	add_type::const_iterator first = a.begin();
 	add_type::const_iterator last = a.end();
@@ -142,7 +168,8 @@ sim_router_template & sim_foundation::router(const add_type & a)
 }
 
 //***************************************************************************//
-const sim_router_template & sim_foundation::router(const 
+//changed at 2022-4-3
+const /*sim_router_template*/CRouter & sim_foundation::router(const 
 			add_type & a) const 
 {
 	add_type::const_iterator first = a.begin();
@@ -240,16 +267,19 @@ void sim_foundation::receive_CREDIT_message(mess_event mesg)
 //***************************************************************************//
 void sim_foundation::simulation_results()
 {
-	vector<sim_router_template>::const_iterator first = 
+	//changed at 2022-4-3
+	/* vector<sim_router_template>::const_iterator first = 
 							inter_network_.begin();
 	vector<sim_router_template>::const_iterator last = 
-							inter_network_.end();
+							inter_network_.end(); */
 	double total_delay = 0;
 	//calculate the total delay
-	first = inter_network_.begin();
+	//changed at 2022-4-3
+	/* first = inter_network_.begin();
 	for(; first != last; first++) {
 		total_delay += first->total_delay();
-	}
+	} */
+	for(auto&router:inter_network_)total_delay+=router.total_delay();
 	long tot_f_t = mess_queue::wm_pointer().total_finished();
 
 	double total_mem_power = 0;
@@ -257,7 +287,8 @@ void sim_foundation::simulation_results()
 	double total_arbiter_power = 0;
 	double total_power = 0;
 	double total_link_power = 0;
-	vector<sim_router_template>::iterator ffirst = 
+	//changed at 2022-4-3
+	/* vector<sim_router_template>::iterator ffirst = 
 							inter_network_.begin();
 	vector<sim_router_template>::iterator llast = 
 							inter_network_.end();
@@ -267,6 +298,12 @@ void sim_foundation::simulation_results()
 		total_crossbar_power += ffirst->power_crossbar_report();
 		total_arbiter_power += ffirst->power_arbiter_report();
 		total_link_power += ffirst->power_link_report();
+	} */
+	for(auto&router:inter_network_){
+		total_mem_power+=router.power_buffer_report();
+		total_crossbar_power+=router.power_crossbar_report();
+		total_arbiter_power+=router.power_arbiter_report();
+		total_link_power+=router.power_link_report();
 	}
 	time_type curr_time = mess_queue::m_pointer().current_time();
 	total_mem_power /= curr_time;
@@ -292,13 +329,15 @@ void sim_foundation::simulation_results()
 //Check if the network is back to the inital state.
 void sim_foundation::simulation_check()
 {
-	vector<sim_router_template>::const_iterator first = 
+	//changed at 2022-4-3
+	/* vector<sim_router_template>::const_iterator first = 
 					inter_network_.begin();
 	vector<sim_router_template>::const_iterator last = 
 					inter_network_.end();
 	for(; first != last; first++) {
 		first->empty_check();
-	}
+	} */
+	for(auto&router:inter_network_)router.empty_check();
 	cout<<"simulation empty check is correct.\n";
 }
 

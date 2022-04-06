@@ -32,7 +32,7 @@ configuration::configuration(int argc, char * const argv []):
 	vc_share_(MONO_)
 {
 	ap_ = this;
-	const char * opt_str = "h:?:A:c:V:B:F:T:r:I:O:R:L:";
+	const char * opt_str = "h:?:A:c:V:B:F:T:r:I:O:R:L:G:";
 	string usage = string("usage: ") + argv[0] + " [" +
 		opt_str + "] \n";
 
@@ -99,6 +99,12 @@ configuration::configuration(int argc, char * const argv []):
 				routing_alg_ = Conv(optarg);
 				break;
 
+			//changed at 2022-4-4
+			//http://c.biancheng.net/cpp/html/379.html
+			case 'G':
+				topo_file_path=optarg;
+				break;
+
 			case '?':
 				throw init_error(help_);
 			    break;
@@ -142,3 +148,7 @@ ostream & operator<<(ostream & os, const configuration & cf) {
 	return os;
 }
 
+const string&configuration::getTopoFilePath()const
+{
+	return topo_file_path;
+}

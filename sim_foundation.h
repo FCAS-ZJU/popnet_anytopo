@@ -19,8 +19,10 @@ class sim_foundation {
 	friend ostream& operator<<(ostream&, const sim_foundation&);
 
 	private:
-
-		vector<sim_router_template> inter_network_;
+		//changed at 2022-4-3
+		//改为继承关系
+		//vector<sim_router_template> inter_network_;
+		vector<CRouter>inter_network_;
 		long ary_size_;//每个维度下的尺寸
 		long cube_size_;//维度
 		long router_counter_;//路由器总数
@@ -54,11 +56,12 @@ class sim_foundation {
 		long packet_counter() {return packet_counter_;}
 		long packet_counter() const {return packet_counter_;}
 
-		vector<sim_router_template> & inter_network() {return inter_network_;}
-		const vector<sim_router_template> & inter_network() const
+		//changed at 2022-4-3
+		vector</*sim_router_template*/CRouter> & inter_network() {return inter_network_;}
+		const vector</*sim_router_template*/CRouter> & inter_network() const
 	   												{return inter_network_;}
-		sim_router_template & router(const add_type& a);
-		const sim_router_template & router(const add_type& a) const;
+		/*sim_router_template*/CRouter & router(const add_type& a);
+		const /*sim_router_template*/CRouter & router(const add_type& a) const;
 		bool valid_address(const add_type & a) const;
 
 		void receive_EVG_message(mess_event mesg);

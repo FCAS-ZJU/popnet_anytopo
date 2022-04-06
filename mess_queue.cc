@@ -52,7 +52,7 @@ void mess_queue::simulator() {
 		mess_event current_message=get_message();
 		//changed at 2020-5-23
 		//输出日志
-		logfile<<current_message;
+		//logfile<<current_message;
 		if(current_message.event_type()==WIRE_||current_message.event_type()==CREDIT_){
 			logfile<<"\tFrom Router "<<current_message.src()
 				<<" to Router "<<current_message.des()
@@ -67,8 +67,8 @@ void mess_queue::simulator() {
 		current_time_ = current_message.event_start();
 
 		if(current_time_ > report_t) {
-		   cout<<"Current time: "<<current_time_<<" Incoming packets"
-			   <<total_incoming<<" Finished packets"<<total_finished_<<endl;
+		   cout<<"Current time: "<<current_time_<<" Incoming packets: "
+			   <<total_incoming<<" Finished packets: "<<total_finished_<<endl;
 			//changed at 2020-5-23
 			//cout<<"Wire Message Count: "<<wireMsgCnt<<" Credit Message Count: "<<creditMsgCnt<<endl;
 		   sim_foundation::wsf().simulation_results();

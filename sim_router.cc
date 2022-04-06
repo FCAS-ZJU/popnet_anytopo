@@ -21,6 +21,9 @@
 #define VOLA
 #endif
 
+using namespace std;
+using namespace boost;
+
 // *****************************************************//
 // data structure to model the structure and behavior   //
 // of routers.                                          //
@@ -91,54 +94,8 @@ sim_router_template::sim_router_template(long a, long b, long c,
 	localinFile() >> local_input_time_; */
 	local_input_time_=localInputTraces.front().startTime;
 
-	routing_alg_ = configuration::ap().routing_alg();
-	switch (routing_alg_)
-	{
-
-	case XY_:
-		curr_algorithm = &sim_router_template::XY_algorithm;
-		curr_prevRouterFunc= &sim_router_template::getFromRouter_mesh;
-		curr_prevPortFunc= &sim_router_template::getFromPort_mesh;
-		curr_wireDelayFunc= &sim_router_template::getWireDelay_mesh;
-		curr_nextAddFunc= &sim_router_template::getNextAddress_mesh;
-		curr_wirePcFunc= &sim_router_template::getWirePc_mesh;
-		break;
-
-	case TXY_:
-		curr_algorithm = &sim_router_template::TXY_algorithm;
-		curr_prevRouterFunc= &sim_router_template::getFromRouter_mesh;
-		curr_prevPortFunc= &sim_router_template::getFromPort_mesh;
-		curr_wireDelayFunc= &sim_router_template::getWireDelay_mesh;
-		curr_nextAddFunc= &sim_router_template::getNextAddress_mesh;
-		curr_wirePcFunc= &sim_router_template::getWirePc_mesh;
-		break;
-
-	//changed at 2020-5-6
-	//添加了芯粒的路由算法
-	case CHIPLET_ROUTING_MESH:
-		curr_algorithm = &sim_router_template::chiplet_routing_alg;
-		curr_prevRouterFunc= &sim_router_template::getFromRouter_mesh;
-		curr_prevPortFunc= &sim_router_template::getFromPort_mesh;
-		curr_wireDelayFunc= &sim_router_template::getWireDelay_chipletMesh;
-		curr_nextAddFunc= &sim_router_template::getNextAddress_chipletMesh;
-		curr_wirePcFunc= &sim_router_template::getWirePc_mesh;
-		break;
-
-	//changed at 2020-5-19
-	//增加了星型拓扑的芯粒路由算法
-	case CHIPLET_STAR_TOPO_ROUTING:
-		curr_algorithm = &sim_router_template::chiplet_star_topo_routing_alg;
-		curr_prevRouterFunc= &sim_router_template::getFromRouter_chipletStar;
-		curr_prevPortFunc= &sim_router_template::getFromPort_chipletStar;
-		curr_wireDelayFunc= &sim_router_template::getWireDelay_chipletStar;
-		curr_nextAddFunc= &sim_router_template::getNextAddress_chipletStar;
-		curr_wirePcFunc= &sim_router_template::getWirePc_chipletStar;
-		break;
-
-	default:
-		Sassert(0);
-		break;
-	}
+	//changed at 2022-4-3
+	setRoutingType();
 }
 
 power_template::power_template() : flit_size_(),
@@ -759,7 +716,7 @@ long sim_router_template::getFromPort(long port)
 		default:
 			throw "Error: Wrong type of routing algorithm";
 	} */
-	(this->*curr_prevPortFunc)(port);
+	return (this->*curr_prevPortFunc)(port);
 }
 long sim_router_template::getFromPort_mesh(long port)
 {
@@ -1049,7 +1006,7 @@ long sim_router_template::getWirePc(long port)
 		default:
 			throw "Error: Wrong type of routing algorithm";
 	} */
-	(this->*curr_wirePcFunc)(port);
+	return (this->*curr_wirePcFunc)(port);
 }
 long sim_router_template::getWirePc_mesh(long port)
 {
@@ -1221,4 +1178,434 @@ void sim_router_template::empty_check() const
 			//Sassert(0);
 		}
 	}
+}
+
+void sim_router_template::routingAlg(const add_type &destination, const add_type &source, long s_ph, long s_vc)
+{
+	(this->*curr_algorithm)(destination,source,s_ph,s_vc);
+}
+
+void sim_router_template::setRoutingType()
+{
+	routing_alg_ = configuration::ap().routing_alg();
+	switch (routing_alg_)
+	{
+
+	case XY_:
+		curr_algorithm = &sim_router_template::XY_algorithm;
+		curr_prevRouterFunc= &sim_router_template::getFromRouter_mesh;
+		curr_prevPortFunc= &sim_router_template::getFromPort_mesh;
+		curr_wireDelayFunc= &sim_router_template::getWireDelay_mesh;
+		curr_nextAddFunc= &sim_router_template::getNextAddress_mesh;
+		curr_wirePcFunc= &sim_router_template::getWirePc_mesh;
+		break;
+
+	case TXY_:
+		curr_algorithm = &sim_router_template::TXY_algorithm;
+		curr_prevRouterFunc= &sim_router_template::getFromRouter_mesh;
+		curr_prevPortFunc= &sim_router_template::getFromPort_mesh;
+		curr_wireDelayFunc= &sim_router_template::getWireDelay_mesh;
+		curr_nextAddFunc= &sim_router_template::getNextAddress_mesh;
+		curr_wirePcFunc= &sim_router_template::getWirePc_mesh;
+		break;
+
+	//changed at 2020-5-6
+	//添加了芯粒的路由算法
+	case CHIPLET_ROUTING_MESH:
+		curr_algorithm = &sim_router_template::chiplet_routing_alg;
+		curr_prevRouterFunc= &sim_router_template::getFromRouter_mesh;
+		curr_prevPortFunc= &sim_router_template::getFromPort_mesh;
+		curr_wireDelayFunc= &sim_router_template::getWireDelay_chipletMesh;
+		curr_nextAddFunc= &sim_router_template::getNextAddress_chipletMesh;
+		curr_wirePcFunc= &sim_router_template::getWirePc_mesh;
+		break;
+
+	//changed at 2020-5-19
+	//增加了星型拓扑的芯粒路由算法
+	case CHIPLET_STAR_TOPO_ROUTING:
+		curr_algorithm = &sim_router_template::chiplet_star_topo_routing_alg;
+		curr_prevRouterFunc= &sim_router_template::getFromRouter_chipletStar;
+		curr_prevPortFunc= &sim_router_template::getFromPort_chipletStar;
+		curr_wireDelayFunc= &sim_router_template::getWireDelay_chipletStar;
+		curr_nextAddFunc= &sim_router_template::getNextAddress_chipletStar;
+		curr_wirePcFunc= &sim_router_template::getWirePc_chipletStar;
+		break;
+
+	//changed at 2022-4-5
+	case GRAPH_TOPO:
+		break;
+
+	default:
+		Sassert(0);
+		break;
+	}
+}
+
+//mesh, XY
+void CXYRouter::routingAlg(const add_type&dst,const add_type&src,long s_ph,long s_vc)
+{
+	XY_algorithm(dst,src,s_ph,s_vc);
+}
+time_type CXYRouter::getWireDelay(long port)
+{
+	return getWireDelay_mesh(port);
+}
+void CXYRouter::getNextAddress(add_type&nextAddress,long port)
+{
+	getNextAddress_mesh(nextAddress,port);
+}
+long CXYRouter::getWirePc(long port)
+{
+	return getWirePc_mesh(port);
+}
+void CXYRouter::getFromRouter(add_type&from,long port)
+{
+	getFromRouter_mesh(from,port);
+}
+long CXYRouter::getFromPort(long port)
+{
+	return getFromPort_mesh(port);
+}
+CXYRouter::CXYRouter(long port_cnt,long vc_cnt,long in_buf_size,long out_buf_size,const add_type&address,long ary_size,long flit_size)
+	:sim_router_template(port_cnt,vc_cnt,in_buf_size,out_buf_size,address,ary_size,flit_size)
+{
+	//nothing
+}
+
+//mesh, TXY
+void CTXYRouter::routingAlg(const add_type&dst,const add_type&src,long s_ph,long s_vc)
+{
+	TXY_algorithm(dst,src,s_ph,s_vc);
+}
+time_type CTXYRouter::getWireDelay(long port)
+{
+	return getWireDelay_mesh(port);
+}
+void CTXYRouter::getNextAddress(add_type&nextAddress,long port)
+{
+	getNextAddress_mesh(nextAddress,port);
+}
+long CTXYRouter::getWirePc(long port)
+{
+	return getWirePc_mesh(port);
+}
+void CTXYRouter::getFromRouter(add_type&from,long port)
+{
+	getFromRouter_mesh(from,port);
+}
+long CTXYRouter::getFromPort(long port)
+{
+	return getFromPort_mesh(port);
+}
+CTXYRouter::CTXYRouter(long port_cnt,long vc_cnt,long in_buf_size,long out_buf_size,const add_type&address,long ary_size,long flit_size)
+	:sim_router_template(port_cnt,vc_cnt,in_buf_size,out_buf_size,address,ary_size,flit_size)
+{
+	//nothing
+}
+
+//chiplet, mesh
+void CChipletMeshRouter::routingAlg(const add_type&dst,const add_type&src,long s_ph,long s_vc)
+{
+	chiplet_routing_alg(dst,src,s_ph,s_vc);
+}
+time_type CChipletMeshRouter::getWireDelay(long port)
+{
+	return getWireDelay_chipletMesh(port);
+}
+void CChipletMeshRouter::getNextAddress(add_type&nextAddress,long port)
+{
+	getNextAddress_chipletMesh(nextAddress,port);
+}
+long CChipletMeshRouter::getWirePc(long port)
+{
+	return getWirePc_mesh(port);
+}
+void CChipletMeshRouter::getFromRouter(add_type&from,long port)
+{
+	getFromRouter_mesh(from,port);
+}
+long CChipletMeshRouter::getFromPort(long port)
+{
+	return getFromPort_mesh(port);
+}
+CChipletMeshRouter::CChipletMeshRouter(long port_cnt,long vc_cnt,long in_buf_size,long out_buf_size,const add_type&address,long ary_size,long flit_size)
+	:sim_router_template(port_cnt,vc_cnt,in_buf_size,out_buf_size,address,ary_size,flit_size)
+{
+	//nothing
+}
+
+//chiplet, star
+void CChipletStarRouter::routingAlg(const add_type&dst,const add_type&src,long s_ph,long s_vc)
+{
+	chiplet_star_topo_routing_alg(dst,src,s_ph,s_vc);
+}
+time_type CChipletStarRouter::getWireDelay(long port)
+{
+	return getWireDelay_chipletStar(port);
+}
+void CChipletStarRouter::getNextAddress(add_type&nextAddress,long port)
+{
+	getNextAddress_chipletStar(nextAddress,port);
+}
+long CChipletStarRouter::getWirePc(long port)
+{
+	return getWirePc_chipletStar(port);
+}
+void CChipletStarRouter::getFromRouter(add_type&from,long port)
+{
+	getFromRouter_chipletStar(from,port);
+}
+long CChipletStarRouter::getFromPort(long port)
+{
+	return getFromPort_chipletStar(port);
+}
+CChipletStarRouter::CChipletStarRouter(long port_cnt,long vc_cnt,long in_buf_size,long out_buf_size,const add_type&address,long ary_size,long flit_size)
+	:sim_router_template(port_cnt,vc_cnt,in_buf_size,out_buf_size,address,ary_size,flit_size)
+{
+	//nothing
+}
+
+CRouter::CRouter(long port_cnt,long vc_cnt,long in_buf_size,long out_buf_size,const add_type&address,long ary_size,long flit_size)
+{
+	switch(configuration::ap().routing_alg()){
+	case XY_:
+		m_router=new CXYRouter(port_cnt,vc_cnt,in_buf_size,out_buf_size,address,ary_size,flit_size);
+		break;
+	case TXY_:
+		m_router=new CTXYRouter(port_cnt,vc_cnt,in_buf_size,out_buf_size,address,ary_size,flit_size);
+		break;
+	case CHIPLET_ROUTING_MESH:
+		m_router=new CChipletMeshRouter(port_cnt,vc_cnt,in_buf_size,out_buf_size,address,ary_size,flit_size);
+		break;
+	case CHIPLET_STAR_TOPO_ROUTING:
+		m_router=new CChipletStarRouter(port_cnt,vc_cnt,in_buf_size,out_buf_size,address,ary_size,flit_size);
+		break;
+	case GRAPH_TOPO:
+		m_router=new CGraphTopo(CGraphTopo::vPortCount[address.front()],vc_cnt,in_buf_size,out_buf_size,address,ary_size,flit_size);
+		break;
+	default:
+		Sassert(false);
+	}
+}
+CRouter::~CRouter()
+{
+	delete m_router;
+}
+CRouter&CRouter::operator=(const CRouter&r)
+{
+	copyFrom(r);
+	return *this;
+}
+CRouter::CRouter(const CRouter&r)
+{
+	copyFrom(r);
+}
+void CRouter::copyFrom(const CRouter&r)
+{
+	delete m_router;
+	long port_cnt,vc_cnt,in_buf_size,out_buf_size,ary_size,flit_size;
+	const add_type&address=r.m_router->address();
+	port_cnt=r.m_router->physic_ports();
+	vc_cnt=r.m_router->vc_number();
+	in_buf_size=r.m_router->buffer_size();
+	out_buf_size=r.m_router->getOutBufferSize();
+	ary_size=r.m_router->getArySize();
+	flit_size=r.m_router->getFlitSize();
+	switch(configuration::ap().routing_alg()){
+	case XY_:
+		m_router=new CXYRouter(port_cnt,vc_cnt,in_buf_size,out_buf_size,address,ary_size,flit_size);
+		break;
+	case TXY_:
+		m_router=new CTXYRouter(port_cnt,vc_cnt,in_buf_size,out_buf_size,address,ary_size,flit_size);
+		break;
+	case CHIPLET_ROUTING_MESH:
+		m_router=new CChipletMeshRouter(port_cnt,vc_cnt,in_buf_size,out_buf_size,address,ary_size,flit_size);
+		break;
+	case CHIPLET_STAR_TOPO_ROUTING:
+		m_router=new CChipletStarRouter(port_cnt,vc_cnt,in_buf_size,out_buf_size,address,ary_size,flit_size);
+		break;
+	case GRAPH_TOPO:
+		m_router=new CGraphTopo(port_cnt,vc_cnt,in_buf_size,out_buf_size,address,ary_size,flit_size);
+		break;
+	default:
+		Sassert(false);
+	}
+}
+//https://zhuanlan.zhihu.com/p/347977300
+CRouter::CRouter(CRouter&&r0)
+{
+	m_router=r0.m_router;
+	r0.m_router=nullptr;
+}
+double CRouter::power_buffer_report()
+{
+	return m_router->power_buffer_report();
+}
+double CRouter::power_crossbar_report()
+{
+	return m_router->power_crossbar_report();
+}
+double CRouter::power_arbiter_report()
+{
+	return m_router->power_arbiter_report();
+}
+double CRouter::power_link_report()
+{
+	return m_router->power_link_report();
+}
+void CRouter::empty_check()const
+{
+	m_router->empty_check();
+}
+void CRouter::router_sim_pwr()
+{
+	m_router->router_sim_pwr();
+}
+time_type CRouter::total_delay()const
+{
+	return m_router->total_delay();
+}
+void CRouter::receive_credit(long pc,long vc)
+{
+	m_router->receive_credit(pc,vc);
+}
+void CRouter::receive_packet()
+{
+	m_router->receive_packet();
+}
+void CRouter::receive_flit(long pc, long vc, flit_template&flit)
+{
+	m_router->receive_flit(pc,vc,flit);
+}
+void CRouter::inputTrace(const SPacket&packet)
+{
+	m_router->inputTrace(packet);
+}
+ostream&operator<<(ostream&os,const CRouter&router)
+{
+	return os<<(*router.m_router);
+}
+
+//graph topo
+TAddressNumber CGraphTopo::getAddressNumber()const
+{
+	return address_.front();
+}
+void CGraphTopo::routingAlg(const add_type&dst,const add_type&src,long s_ph,long s_vc)
+{
+	TAddressNumber nextAdd=routingTable[getAddressNumber()][dst.front()];
+	auto it=nextHop_port_map[getAddressNumber()].find(nextAdd);
+	if(it==nextHop_port_map[getAddressNumber()].end()){
+		cerr<<"Routing error: dst "<<dst.front()<<" in "<<getAddressNumber()<<" next: "<<nextAdd<<endl;
+		Sassert(false);
+	}
+	TAddressNumber port=it->second;
+	addRoutingForDifferentVC(input_module_,s_ph,s_vc,port);
+	//cout<<"Routing: dst "<<dst.front()<<" in "<<getAddressNumber()<<" next: "<<nextAdd<<" port "<<port<<endl;
+}
+time_type CGraphTopo::getWireDelay(long port)
+{
+	return portMap[getAddressNumber()][port].linkDelay;
+}
+void CGraphTopo::getNextAddress(add_type&nextAddress,long port)
+{
+	nextAddress.clear();
+	nextAddress.push_back(portMap[getAddressNumber()][port].neighbour);
+}
+long CGraphTopo::getWirePc(long port)
+{
+	return portMap[getAddressNumber()][port].neighbourPort;
+}
+void CGraphTopo::getFromRouter(add_type&from,long port)
+{
+	getNextAddress(from,port);
+}
+long CGraphTopo::getFromPort(long port)
+{
+	return getWirePc(port);
+}
+CGraphTopo::CGraphTopo(long port_cnt,long vc_cnt,long in_buf_size,long out_buf_size,const add_type&address,long ary_size,long flit_size)
+	:sim_router_template(port_cnt,vc_cnt,in_buf_size,out_buf_size,address,ary_size,flit_size)
+{
+	//nothing
+}
+/* std::unordered_map<TAddressNumber,TAddressNumber>CGraphTopo::add_index_map;
+std::vector<TAddressNumber>CGraphTopo::index_add_map; */
+graph_t CGraphTopo::topo0;
+TMatrix CGraphTopo::delayTable;
+TMatrix CGraphTopo::energyTable;
+TIntMatrix CGraphTopo::routingTable;
+TAddressNumber CGraphTopo::vertexCnt;
+unique_ptr<vector<CGraphTopo::SLinkInfo>[]>CGraphTopo::portMap;
+unique_ptr<std::unordered_map<TAddressNumber,TAddressNumber>[]>CGraphTopo::nextHop_port_map;
+vector<size_t>CGraphTopo::vPortCount;
+void CGraphTopo::readTopo()
+{
+	Sassert(readGvGraph(configuration::ap().getTopoFilePath(),topo0));
+	resetIndex(topo0);
+}
+void CGraphTopo::calRoutingTable(graph_t&topo)
+{
+	TMatrix index_delayTable,index_energyTable;
+	TIntMatrix index_routingTable;
+	calculateShortestPathTables(topo,index_delayTable,index_energyTable,index_routingTable);
+	auto name=get(&vertex_info::name,topo);
+	auto index=get(&vertex_info::index,topo);
+	auto nodes=vertices(topo);
+	vertexCnt=num_vertices(topo);
+	vector<TAddressNumber>index2add(vertexCnt);
+	vPortCount.resize(vertexCnt);
+	for_each(nodes.first,nodes.second,[&](const vertex_t&v){
+		TAddressNumber add=stol(name[v]);
+		//cout<<"Vertex name: "<<add<<endl;
+		index2add[index[v]]=add;
+		vPortCount[add]=degree(v,topo)+1;
+	});
+	resetMatrix(energyTable,vertexCnt,-1);
+	resetMatrix(delayTable,vertexCnt,-1);
+	resetIntMatrix(routingTable,vertexCnt,-1);
+	for(i=0;i<vertexCnt;i++)routingTable[i][i]=i;
+	TAddressNumber i,j;
+	for(i=0;i<vertexCnt;i++){
+		for(j=0;j<vertexCnt;j++){
+			TAddressNumber add1=index2add[i],add2=index2add[j];
+			delayTable[add1][add2]=index_delayTable[i][j];
+			energyTable[add1][add2]=index_energyTable[i][j];
+			routingTable[add1][add2]=index2add[index_routingTable[i][j]];
+		}
+	}
+	/* for_each(index_routingTable.begin(),index_routingTable.end(),[&](const auto&arr){
+		for(auto&x:arr)cout<<x<<' ';
+		cout<<endl;
+	});
+	cout<<endl;
+	for_each(routingTable.begin(),routingTable.end(),[&](const auto&arr){
+		for(auto&x:arr)cout<<x<<' ';
+		cout<<endl;
+	}); */
+	portMap=make_unique<vector<SLinkInfo>[]>(vertexCnt);
+	nextHop_port_map=make_unique<std::unordered_map<TAddressNumber,TAddressNumber>[]>(vertexCnt);
+	for(i=0;i<vertexCnt;i++){
+		nextHop_port_map[i][i]=0;
+		portMap[i].push_back({0,0,i});
+	}
+	auto edgeList=edges(topo);
+	auto delay=get(edge_weight,topo);
+	for_each(edgeList.first,edgeList.second,[&](const edge_t&e){
+		vertex_t u=source(e,topo),v=target(e,topo);
+		TAddressNumber add1=index2add[index[u]],add2=index2add[index[v]];
+		//延迟
+		time_type d=delay[e];
+		//端口对应关系
+		TAddressNumber p=portMap[add1].size(),q=portMap[add2].size();
+		portMap[add1].push_back({q,d,add2});
+		portMap[add2].push_back({p,d,add1});
+		nextHop_port_map[add1][add2]=p;
+		nextHop_port_map[add2][add1]=q;
+	});
+}
+void CGraphTopo::init()
+{
+	readTopo();
+	calRoutingTable(topo0);
 }

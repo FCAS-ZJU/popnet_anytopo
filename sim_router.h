@@ -24,6 +24,11 @@ extern "C" {
 //changed at 2021-10-26
 #include<queue>
 
+//changed at 2022-4-4
+#include"graph_lib/graph.h"
+#include"changes/shortest_path_routing.h"
+#include<unordered_map>
+
 // *****************************************************//
 // data structure to model the structure and behavior   //
 // of routers.                                          //
@@ -251,7 +256,8 @@ struct SPacket
 class sim_router_template {
 	friend ostream& operator<<(ostream& os, const sim_router_template & sr);
 
-	private:
+	//private:
+	protected:
 		//router address
 		add_type address_;
 		//the input buffer module
@@ -292,27 +298,32 @@ class sim_router_template {
 		//ifstream * localinFile_;//本地轨迹文件流，本路由器的轨迹文件流
 		std::queue<SPacket>localInputTraces;
 
-		time_type getWireDelay(long port);
+		virtual time_type getWireDelay(long port);
 		time_type getWireDelay_mesh(long port);
 		time_type getWireDelay_chipletMesh(long port);
 		time_type getWireDelay_chipletStar(long port);
 		
-		void getNextAddress(add_type&nextAddress,long port);
+		//将下一跳地址写入nextAddress
+		virtual void getNextAddress(add_type&nextAddress,long port);
 		void getNextAddress_chipletMesh(add_type&nextAdd,long port);
 		void getNextAddress_chipletStar(add_type &nextAddress, long port);
 		void getNextAddress_mesh(add_type&nextAdd,long port);
 
-		long getWirePc(long port);
+		virtual long getWirePc(long port);
 		long getWirePc_mesh(long port);
 		long getWirePc_chipletStar(long port);
 
-		void getFromRouter(add_type&from,long port);
+		virtual void getFromRouter(add_type&from,long port);
 		void getFromRouter_mesh(add_type&from,long port);
 		void getFromRouter_chipletStar(add_type&from,long port);
 		
-		long getFromPort(long port);
+		virtual long getFromPort(long port);
 		long getFromPort_mesh(long port);
 		long getFromPort_chipletStar(long port);
+
+		//changed at 2022-4-3
+		virtual void routingAlg(const add_type &destination, const add_type &source, long s_ph, long s_vc);
+		void setRoutingType();
 	public:
 		vector<long> & address() {return address_;}
 		const vector<long> & address() const {return address_;}
@@ -384,6 +395,144 @@ class sim_router_template {
 
 		//changed at 2021-10-26
 		void inputTrace(const SPacket&packet);
+
+		//changed at 2022-4-3
+		long getOutBufferSize()const
+		{
+			return outbuffer_size_;
+		}
+		long getArySize()const
+		{
+			return ary_size_;
+		}
+		long getFlitSize()const
+		{
+			return flit_size_;
+		}
 };
+
+class CXYRouter:public sim_router_template
+{
+protected:
+	virtual void routingAlg(const add_type&dst,const add_type&src,long s_ph,long s_vc);
+	virtual time_type getWireDelay(long port);
+	virtual void getNextAddress(add_type&nextAddress,long port);
+	virtual long getWirePc(long port);
+	virtual void getFromRouter(add_type&from,long port);
+	virtual long getFromPort(long port);
+public:
+	CXYRouter(long port_cnt,long vc_cnt,long in_buf_size,long out_buf_size,const add_type&address,long ary_size,long flit_size);
+};
+
+class CTXYRouter:public sim_router_template
+{
+protected:
+	virtual void routingAlg(const add_type&dst,const add_type&src,long s_ph,long s_vc);
+	virtual time_type getWireDelay(long port);
+	virtual void getNextAddress(add_type&nextAddress,long port);
+	virtual long getWirePc(long port);
+	virtual void getFromRouter(add_type&from,long port);
+	virtual long getFromPort(long port);
+public:
+	CTXYRouter(long port_cnt,long vc_cnt,long in_buf_size,long out_buf_size,const add_type&address,long ary_size,long flit_size);
+};
+
+class CChipletMeshRouter:public sim_router_template
+{
+protected:
+	virtual void routingAlg(const add_type&dst,const add_type&src,long s_ph,long s_vc);
+	virtual time_type getWireDelay(long port);
+	virtual void getNextAddress(add_type&nextAddress,long port);
+	virtual long getWirePc(long port);
+	virtual void getFromRouter(add_type&from,long port);
+	virtual long getFromPort(long port);
+public:
+	CChipletMeshRouter(long port_cnt,long vc_cnt,long in_buf_size,long out_buf_size,const add_type&address,long ary_size,long flit_size);
+};
+
+class CChipletStarRouter:public sim_router_template
+{
+protected:
+	virtual void routingAlg(const add_type&dst,const add_type&src,long s_ph,long s_vc);
+	virtual time_type getWireDelay(long port);
+	virtual void getNextAddress(add_type&nextAddress,long port);
+	virtual long getWirePc(long port);
+	virtual void getFromRouter(add_type&from,long port);
+	virtual long getFromPort(long port);
+public:
+	CChipletStarRouter(long port_cnt,long vc_cnt,long in_buf_size,long out_buf_size,const add_type&address,long ary_size,long flit_size);
+};
+
+class CRouter
+{
+	sim_router_template*m_router=nullptr;
+public:
+	CRouter(long port_cnt,long vc_cnt,long in_buf_size,long out_buf_size,const add_type&address,long ary_size,long flit_size);
+	~CRouter();
+	CRouter&operator=(const CRouter&r);
+	CRouter(const CRouter&r);
+	void copyFrom(const CRouter&r);
+	//移动构造函数
+	CRouter(CRouter&&r0);
+	
+	double power_buffer_report();
+	double power_crossbar_report();
+	double power_arbiter_report();
+	double power_link_report();
+	void empty_check()const;
+	void router_sim_pwr();
+	time_type total_delay()const;
+	void receive_credit(long pc, long vc);
+	void receive_packet();
+	void receive_flit(long pc, long vc, flit_template&flit);
+	void inputTrace(const SPacket&packet);
+
+	friend ostream&operator<<(ostream&os,const CRouter&router);
+};
+ostream&operator<<(ostream&os,const CRouter&router);
+
+//changed at 2022-4-4
+class CGraphTopo:public sim_router_template
+{
+protected:
+	struct SLinkInfo{
+		TAddressNumber neighbourPort;
+		time_type linkDelay;
+		TAddressNumber neighbour;
+	};
+
+	/* static std::unordered_map<TAddressNumber,TAddressNumber>add_index_map;
+	static std::vector<TAddressNumber>index_add_map; */
+	static graph_t topo0;
+	static TMatrix delayTable;
+	static TMatrix energyTable;
+	static TIntMatrix routingTable;
+	static TAddressNumber vertexCnt;
+	static unique_ptr<vector<SLinkInfo>[]>portMap;
+	static unique_ptr<std::unordered_map<TAddressNumber,TAddressNumber>[]>nextHop_port_map;
+	static vector<size_t>vPortCount;
+
+	static void readTopo();
+	static void calRoutingTable(graph_t&topo);
+
+	TAddressNumber getAddressNumber()const;
+
+	virtual void routingAlg(const add_type&dst,const add_type&src,long s_ph,long s_vc);
+	virtual time_type getWireDelay(long port);
+	virtual void getNextAddress(add_type&nextAddress,long port);
+	virtual long getWirePc(long port);
+	virtual void getFromRouter(add_type&from,long port);
+	virtual long getFromPort(long port);
+public:
+	static void init();
+
+	CGraphTopo(long port_cnt,long vc_cnt,long in_buf_size,long out_buf_size,const add_type&address,long ary_size,long flit_size);
+
+	//http://c.biancheng.net/view/169.html
+	friend class CRouter;
+};
+
+const long VIRTUAL_CHANNEL_COUNT_0=2;
+void addRoutingForDifferentVC(input_template&inputModule,long s_ph,long s_vc,long port,long vc_cnt=VIRTUAL_CHANNEL_COUNT_0);
 
 #endif

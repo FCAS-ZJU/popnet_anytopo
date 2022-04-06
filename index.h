@@ -14,7 +14,8 @@ enum routing_type {
     XY_ ,
     TXY_ ,
     CHIPLET_ROUTING_MESH,
-    CHIPLET_STAR_TOPO_ROUTING
+    CHIPLET_STAR_TOPO_ROUTING,
+    GRAPH_TOPO
 };
 enum VC_state_type {INIT_, ROUTING_, VC_AB_, SW_AB_, SW_TR_, HOME_};
 enum flit_type {
@@ -23,6 +24,10 @@ enum flit_type {
 enum vc_share_type {SHARE_, MONO_};
 enum VC_usage_type {USED_, FREE_};
 typedef double time_type;
+
+//changed at 2022-4-4
+typedef long TAddressNumber;
+
 typedef vector<long> add_type;
 typedef pair<long, long> VC_type;
 typedef vector<unsigned long long> Data_type;
@@ -30,9 +35,15 @@ typedef unsigned long long Atom_type;
 const VC_type VC_NULL = VC_type(-1, -1); 
 #define BUFF_BOUND_ 100
 #define WIRE_DELAY_ 0.9
+//路由延迟
 #define PIPE_DELAY_ 1.0
 #define CREDIT_DELAY_ 1.0
+
+//changed at 2022-4-5
+//输出周期
 #define REPORT_PERIOD_ 2000
+//#define REPORT_PERIOD_ 1e10
+
 #define S_ELPS_ 0.00000001
 #define ATOM_WIDTH_ 64
 #define ZERO_ 0

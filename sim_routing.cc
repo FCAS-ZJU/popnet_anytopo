@@ -132,10 +132,9 @@ void sim_router_template::chiplet_routing_alg(const add_type & des_t,const add_t
 }
 
 //changed at 2020-5-19
-void addRoutingForDifferentVC(input_template&inputModule,long s_ph,long s_vc,long port)
+void addRoutingForDifferentVC(input_template&inputModule,long s_ph,long s_vc,long port,long vc_cnt)
 {
-	const long VIRTUAL_CHANNEL_COUNT=2;
-	for(long i=0;i<VIRTUAL_CHANNEL_COUNT;++i){
+	for(long i=0;i<vc_cnt;++i){
 		inputModule.add_routing(s_ph,s_vc,VC_type(port,i));
 	}
 }
@@ -207,7 +206,9 @@ void sim_router_template::routing_decision()
 			}else {
 				input_module_.clear_routing(0,j);
 				input_module_.clear_crouting(0,j);
-				(this->*curr_algorithm)(des_t, sor_t, 0, j);
+				//changed at 2022-4-3
+				//(this->*curr_algorithm)(des_t, sor_t, 0, j);
+				routingAlg(des_t,sor_t,0,j);
 				input_module_.state_update(0, j, VC_AB_);
 			}
 		//the BODY_ or TAIL_ flits
@@ -291,7 +292,9 @@ void sim_router_template::routing_decision()
 				}else {
 					input_module_.clear_routing(i, j);
 					input_module_.clear_crouting(i, j);
-					(this->*curr_algorithm)(des_t, sor_t, i, j);
+					//changed at 2022-4-3
+					//(this->*curr_algorithm)(des_t, sor_t, i, j);
+					routingAlg(des_t,sor_t,i,j);
 					input_module_.state_update(i, j, VC_AB_);
 				}
 			//for BODY_ or TAIL_ flits
